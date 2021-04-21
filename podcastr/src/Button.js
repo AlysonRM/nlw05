@@ -1,10 +1,11 @@
+import { useState } from 'react';
 
 export default function Button (props) {
-	let counter = 1
+	const [counter, setCounter] = useState(1);
+	
 
 	function increment() {
-		counter += 1;
-		console.log(counter);
+		setCounter(counter +1);
 	}
 
   return (
